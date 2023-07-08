@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "painkiller"
+version = "0.1.0"
+dependencies = [
+    "SQLAlchemy==2.0.18",
+    "loguru==0.7.0"
+]
+authors = [
+  { name="Rato Pythonista", email="ratopythonista@gmail.com" },
+]
+description = "Painkiller tools"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ratopythonista/painkiller-ai"
+"Bug Tracker" = "https://github.com/ratopythonista/painkiller-ai/issues"
