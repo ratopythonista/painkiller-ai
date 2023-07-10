@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 
-from src.presentation.routes import measurement
 from painkiller import create_database
+
+from measurement.presentation.routes import measurement
 
 app = FastAPI(
     title="Painkiller AI - Measurement Microservice"

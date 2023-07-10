@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from src.presentation.routes import patient
+from patient.presentation.routes import patient
 from painkiller import create_database
 
 app = FastAPI(

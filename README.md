@@ -17,3 +17,16 @@ Mesaure API -
 Jonas API -
 
 You can also know more about wich one by clickling on the name.
+
+
+## tests
+
+In order to test the modules, you need to install the following:
+
+`pip install pytest pytest-cov pytest-mock`
+
+Then you can run:
+    Patient API: `(cd patient; pip install .; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=patient tests/)`
+    Measurement API: `(cd measurement; pip install .; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=measurement tests/)`
+
+``

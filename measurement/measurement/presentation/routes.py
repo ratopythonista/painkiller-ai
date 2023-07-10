@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body
 
-from src.bussiness import MeasurementBussiness
-from src.presentation.schemas import DefaultResponse, Measurement
+from measurement.bussiness import MeasurementBussiness
+from measurement.presentation.schemas import DefaultResponse, Measurement
 
 measurement = APIRouter(prefix="/api/v1", tags=["patient"])
 
