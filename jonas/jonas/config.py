@@ -1,0 +1,10 @@
+from os import getenv
+from dotenv import load_dotenv
+
+load_dotenv(".env")
+
+DATABASE_URI=getenv("DATABASE_URI")
+FILESYSTEM_HOST=getenv("FILESYSTEM_HOST")
+FILESYSTEM_BUCKET=getenv("FILESYSTEM_BUCKET")
+FILESYSTEM_ACCESS_KEY=getenv("FILESYSTEM_ACCESS_KEY")
+FILESYSTEM_SECRET_KEY=getenv("FILESYSTEM_SECRET_KEY")

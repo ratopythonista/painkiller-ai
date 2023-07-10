@@ -3,7 +3,7 @@ from fastapi import APIRouter, Body
 from measurement.bussiness import MeasurementBussiness
 from measurement.presentation.schemas import DefaultResponse, Measurement
 
-measurement = APIRouter(prefix="/api/v1", tags=["patient"])
+measurement = APIRouter(prefix="/api/v1", tags=["measurement"])
 
 
 @measurement.post("/patient/{patient_id}/measurements", status_code=200, description="set pacient measurement info", response_model=DefaultResponse)
