@@ -18,6 +18,9 @@ Jonas API -
 
 You can also know more about wich one by clickling on the name.
 
+In order to have database pre poluated to use Jonas API, you can run with the compose up:
+
+`docker cp ./scripts/populate.sql painkiller-database:populate.sql; docker exec -it painkiller-database psql -U painkiller -d postgres -f populate.sql`
 
 ## tests
 
