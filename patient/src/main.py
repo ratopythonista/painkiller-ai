@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+from src.presentation.routes import patient
+from painkiller import create_database
 
+app = FastAPI(
+    title="Painkiller AI - Patient Microservice"
+)
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+app.include_router(patient)
+
+create_database()
