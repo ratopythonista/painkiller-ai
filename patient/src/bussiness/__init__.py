@@ -16,6 +16,11 @@ class PatientBussiness:
         else:
             raise HTTPException(**asdict(ErrorMessage.NOT_INSERTED))
         
+    def get_by_id(patient_id: int):
+        if patient := PatientRepository.get_by_id(patient_id):
+            return Patient(**patient.__dict__)
+        else:
+            raise HTTPException(**asdict(ErrorMessage.NOT_FOUND))
 class ConditionBussiness:
     def get_all():
         return ConditionRepository.get_all()
