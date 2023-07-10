@@ -1,0 +1,2 @@
+[run]
+omit = painkiller/__init__.py, painkiller/__main__.py, painkiller/config.py, painkiller/tables/__init__.py

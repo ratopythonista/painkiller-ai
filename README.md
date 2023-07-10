@@ -26,7 +26,8 @@ In order to test the modules, you need to install the following:
 `pip install pytest pytest-cov pytest-mock`
 
 Then you can run:
-    Patient API: `(cd patient; pip install .; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=patient tests/)`
-    Measurement API: `(cd measurement; pip install .; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=measurement tests/)`
+    Patient API: `(cd patient; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=patient tests/)`
+    Measurement API: `(cd measurement; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=measurement tests/)`
+    Painkiller Package: `(cd painkiller; pip install .; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=painkiller tests/)`
 
 ``
