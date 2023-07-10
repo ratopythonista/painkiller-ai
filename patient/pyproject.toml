@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "painkiller-patient"
 version = "0.1.0"
 dependencies = [
-    "painkiller-ai==0.3.8",
+    "painkiller-ai==0.3.10",
     "fastapi==0.100.0",
     "uvicorn==0.22.0"
 ]

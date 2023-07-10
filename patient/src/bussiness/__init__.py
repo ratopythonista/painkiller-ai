@@ -11,11 +11,11 @@ from painkiller.repository.condition import ConditionRepository
 
 class PatientBussiness:
     def insert(patient: Patient):
-        patient_dict = patient.model_dump()
-        patient_dict["condition_id"] = ConditionRepository.get_by_name(patient.condition.value).condition_id
-        del patient_dict["condition"]
-
-        if PatientRepository.insert(PatientBase(**patient_dict)):
+        if PatientRepository.insert(PatientBase(**patient.model_dump())):
             return DefaultResponse(request="Insert Patient", response="Success")
         else:
             raise HTTPException(**asdict(ErrorMessage.NOT_INSERTED))
+        
+class ConditionBussiness:
+    def get_all():
+        return ConditionRepository.get_all()

@@ -15,3 +15,7 @@ class Repository:
             stmt = select(column).where(filter)
             return session.scalars(stmt).one()
              
+    def get_all(column: DeclarativeBase):
+        with Session(engine) as session:
+            stmt = select(column)
+            return session.scalars(stmt).all()
