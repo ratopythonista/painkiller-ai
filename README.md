@@ -14,12 +14,13 @@ When the applications is up, you can access:
 
 [Mesaure API](./measurement/README.md) - http://localhost:8081/docs
 
-Jonas API
+Judas API
     - FileSystem Console: http://localhost:9001
+    - API: http://localhost:8070/docs
 
 You can also know more about wich one by clickling on the name.
 
-In order to have database pre poluated to use Jonas API, you can run with the compose up:
+In order to have database pre poluated to use judas API, you can run with the compose up:
 
 `docker cp ./scripts/populate.sql painkiller-database:populate.sql; docker exec -it painkiller-database psql -U painkiller -d postgres -f populate.sql`
 
@@ -34,6 +35,6 @@ Then you can run:
     Patient API: `(cd patient; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=patient tests/)`
     Measurement API: `(cd measurement; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=measurement tests/)`
     Painkiller Package: `(cd painkiller; pip install .; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=painkiller tests/)`
-    Jonas API: `(cd jonas; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=jonas tests/)` 
+    Judas API: `(cd judas; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=judas tests/)` 
 
 ``

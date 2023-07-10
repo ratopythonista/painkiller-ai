@@ -1,2 +1,0 @@
-[run]
-omit = jonas/main.py, jonas/config.py, jonas/services/filesystem.py
