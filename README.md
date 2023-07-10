@@ -10,9 +10,9 @@ You can use this by having docker and docker compose installed and run those com
 
 When the applications is up, you can access:
 
-[Patient API](./patient/README.md) - http://localhost:8000/docs
+[Patient API](./patient/README.md) - http://localhost:8080/docs
 
-Mesaure API - 
+[Mesaure API](./measurement/README.md) - http://localhost:8081/docs
 
 Jonas API -
 

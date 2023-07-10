@@ -1,16 +1,16 @@
 from fastapi import APIRouter, Body
 
-from src.bussiness import PatientBussiness, ConditionBussiness
-from src.presentation.schemas import Patient, DefaultResponse, Condition
+from patient.bussiness import PatientBussiness, ConditionBussiness
+from patient.presentation.schemas import Patient, DefaultResponse, Condition
 
-patient = APIRouter(prefix="/api/v1/patient", tags=["patient"])
+patient = APIRouter(prefix="/api/v1", tags=["patient"])
 
 
-@patient.post("/", status_code=200, description="recive new patient", response_model=DefaultResponse)
+@patient.post("/patient/", status_code=200, description="recive new patient", response_model=DefaultResponse)
 def new_patient(patient: Patient = Body(..., description="patient data")):
     return PatientBussiness.insert(patient)
 
-@patient.get("/{patient_id}", status_code=200, description="get pacient info", response_model=Patient)
+@patient.get("/patient/{patient_id}", status_code=200, description="get pacient info", response_model=Patient)
 def get_patient(patient_id: int):
     return PatientBussiness.get_by_id(patient_id)
 
