@@ -2,6 +2,8 @@
 
 This application is a set of microservices to handle with medical patients health.
 
+![image](./painkiller-infra.jpg)
+
 ## usage
 
 You can use this by having docker and docker compose installed and run those commands:
