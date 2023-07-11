@@ -1,0 +1,2 @@
+[run]
+omit = judas/main.py, judas/config.py, judas/services/filesystem.py
