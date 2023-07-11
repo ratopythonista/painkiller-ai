@@ -17,8 +17,8 @@ When the applications is up, you can access:
 [Mesaure API](./measurement/README.md) - http://localhost:8081/docs
 
 [Judas API](./judas/README.md)
-    - FileSystem Console: http://localhost:9001
-    - API: http://localhost:8070/docs
+- FileSystem Console: http://localhost:9001
+- API: http://localhost:8070/docs
 
 You can also know more about wich one by clickling on the name.
 
@@ -34,7 +34,7 @@ In order to test the modules, you need to install the following:
 `pip install pytest pytest-cov pytest-mock`
 
 Then you can run:
-    - Patient API: `(cd patient; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=patient tests/)`
-    - Measurement API: `(cd measurement; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=measurement tests/)`
-    - Painkiller Package: `(cd painkiller; pip install .; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=painkiller tests/)`
-    - Judas API: `(cd judas; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=judas tests/)`
+- Patient API: `(cd patient; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=patient tests/)`
+- Measurement API: `(cd measurement; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=measurement tests/)`
+- Painkiller Package: `(cd painkiller; pip install .; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=painkiller tests/)`
+- Judas API: `(cd judas; make install; pytest --cov-report term-missing  --cov-config=.coveragerc --cov=judas tests/)`
